@@ -78,6 +78,38 @@ main {
   height: auto;
   border-radius: 8px;
 }
+/* Roy, Utah, USA section styles */
+.AboutMe .location-section {
+  grid-column: 1 / span 2;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.AboutMe .location-section h3 {
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.AboutMe .location-section hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.AboutMe .location-section .location-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.AboutMe .location-section .location-details img {
+  width: 80px;
+  border-radius: 6px;
+}
+
+.AboutMe .location-section .location-details p {
+  margin: 0;
+}
 
 .WebDevResources {
   grid-column: 2;
