@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals – Bradly D. Rowe</title>
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Bradly D. Rowe | Learn HTML, CSS, and JavaScript fundamentals.">
+  <title>WDD 131 - Dynamic Web Fundamentals - Bradly D. Rowe</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Bradly D. Rowe | Learn HTML, CSS, and JavaScript fundamentals.">
   <meta name="author" content="Bradly D. Rowe">
   <link rel="stylesheet" href="styles/base.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,31 +12,46 @@
 </head>
 <body>
   <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals - Bradly D. Rowe</span>
     <nav>
-      <a href="https://www.linkedin.com/in/bradlyrowe/">LinkedIn</a>
-      <a href="https://byupw.instructure.com/">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+      <a href="https://www.linkedin.com/in/bradly-rowe-056b6415/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/2?lang=eng&id=p14#p14" target="_blank" rel="noopener">Scripture</a>
       <a href="#">Final Project</a>
     </nav>
   </header>
 
   <main>
     <h1>Bradly D. Rowe</h1>
-    <section class="card">
+    <section class="AboutMe">
       <h2>About Me</h2>
       <img src="images/profile.jpg" alt="Bradly Rowe">
       <p>Database Architect with 20+ years of experience in SQL Server, ETL, and web development. Passionate about performance tuning and creative storytelling.</p>
+      <section style="grid-column: 1 / span 2; width: 100%; margin-top: 1.5rem;">
+        <h3 style="margin-bottom: 0.25rem; text-align: center;">Roy, Utah, USA</h3>
+        <hr style="border: none; border-top: 1px solid #ccc; margin-bottom: 1rem;">
+        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+          <img src="images/USA_Flag.png" alt="USA Flag" style="width: 80px; border-radius: 6px;">
+          <p style="margin: 0;">
+            Roy is a city in northern Utah, located near Ogden. It is known for its friendly community, beautiful mountain views, and easy access to outdoor recreation. Roy offers a welcoming environment for families and professionals alike.
+          </p>
+        </div>
+      </section>
     </section>
-    <section class="card">
-      <h2>Course Goals</h2>
-      <img src="images/goals.jpg" alt="Course Goals">
-      <p>Master dynamic web fundamentals, build responsive layouts, and integrate JavaScript for interactive experiences.</p>
+    <section class="WebDevResources">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://javascript.info/" target="_blank" rel="noopener">JavaScript.info</a></li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> Bradly D. Rowe – Utah, USA</p>
+    <p>&copy; <span id="currentyear"></span> Bradly D. Rowe - Utah, USA</p>
     <p id="lastModified"></p>
   </footer>
 </body>
