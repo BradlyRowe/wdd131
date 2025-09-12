@@ -64,7 +64,7 @@ nav ul li a {
     display: block;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
         gap: 0.5rem;
