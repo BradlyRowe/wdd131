@@ -52,6 +52,7 @@ nav ul {
     margin: 0;
     max-width: 100%;
     height: auto;
+}
 
 nav.open ul {
     display: flex;
@@ -62,3 +63,4 @@ nav ul li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
+}
