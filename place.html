@@ -6,6 +6,10 @@
     <meta name="description" content="Discover the beauty and culture of Hawaii. Explore top attractions, local cuisine, and vibrant festivals." />
     <meta name="author" content="Bradly D. Rowe" />
     <title>Explore [Country Name]</title>
+    <!-- Google Fonts: Inter for body, Merriweather for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css" />
     <script src="scripts/place.js" defer></script>
 </head>
@@ -29,22 +33,25 @@
             <source srcset="images/hawaii_lg.webp 1200w, images/hawaii_md.webp 800w, images/hawaii_sm.webp 480w" sizes="(min-width: 900px) 900px, (min-width:600px) 66vw, 100vw">
             <img src="images/hawaii_sm.webp" alt="Scenic view of Hawaii" loading="lazy" width="1200" height="600" class="hero-img">
         </picture>
-        </section>
 
-    <section class="weather">
-    <h2>Weather <span class="icon" aria-hidden="true"><svg viewBox="0 0 64 64" width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img"><title>Cloudy</title><path d="M20 44h32a8 8 0 0 0 0-16 12 12 0 0 0-23-4 9 9 0 0 0-9 9 7 7 0 0 0 0 4z" fill="#fff"/></svg></span></h2>
-        <p>Temperature: <span id="temp">50°F</span></p>
-        <p>Wind Speed: <span id="wind">5 mph</span></p>
-        <p>Wind Chill: <span id="chill">N/A</span></p>
-        </section>
+        <div class="hero-overlay">
+            <section class="weather">
+            <h2>Weather <span class="icon" aria-hidden="true"><svg viewBox="0 0 64 64" width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img"><title>Cloudy</title><path d="M20 44h32a8 8 0 0 0 0-16 12 12 0 0 0-23-4 9 9 0 0 0-9 9 7 7 0 0 0 0 4z" fill="#fff"/></svg></span></h2>
+                <p>Temperature: <span id="temp">50°F</span></p>
+                <p>Wind Speed: <span id="wind">5 mph</span></p>
+                <p>Wind Chill: <span id="chill">N/A</span></p>
+            </section>
 
-        <section class="highlights">
-        <h2>Highlights</h2>
-        <ul>
-            <li>Famous landmark</li>
-            <li>Local cuisine</li>
-            <li>Festivals</li>
-        </ul>
+            <section class="highlights">
+            <h2>Highlights</h2>
+            <ul>
+                <li>Famous landmark</li>
+                <li>Local cuisine</li>
+                <li>Festivals</li>
+            </ul>
+            </section>
+        </div>
+
         </section>
     </main>
 

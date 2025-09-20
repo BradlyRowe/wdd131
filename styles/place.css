@@ -6,7 +6,7 @@
     --secondary-color: #E7D8C4;   /* Bone - warm sand */
     --highlight-color: #D5BFBB;   /* Pale Silver - sunset haze */
     --text-color: #005883;        /* Midnight Blue - ocean depth */
-    --font-family: 'Segoe UI', sans-serif;
+    --font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
 /* Reset and Base Styles */
@@ -22,6 +22,11 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding: 1rem;
+}
+
+/* Headings use Merriweather for a complementary serif tone */
+h1,h2,h3,h4 {
+    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
 }
 
 /* Header */
@@ -51,6 +56,27 @@ nav a {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
+}
+
+/* hero positioning context */
+.hero { position: relative; }
+
+/* overlay container defaults to bottom full-width band (mobile) */
+.hero-overlay {
+    /* default/mobile: flow in document (below hero) */
+    position: static;
+    display: grid;
+    gap: 0.75rem;
+    padding: 0.75rem 0 0 0;
+    grid-template-columns: 1fr;
+}
+
+.hero-overlay .weather,
+.hero-overlay .highlights {
+    background: rgba(0,88,131,0.85);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
 }
 
 /* Responsive SVG wrapper for hero image */
@@ -139,5 +165,22 @@ footer {
     .weather h2::before {
         content: '⛅';
         margin-right: 0.5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    /* make the overlay absolute on larger screens */
+    .hero-overlay {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        left: auto;
+        width: 320px;
+        padding: 1rem;
+    }
+
+    .hero-overlay .weather,
+    .hero-overlay .highlights {
+        background: rgba(0,88,131,0.9);
     }
 }
