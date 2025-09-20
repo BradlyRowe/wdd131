@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore [Country Name]</title>
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hawaii</h1>
+        <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Culture</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+        <picture>
+            <source srcset="images/hawaii_lg.webp" media="(min-width: 600px)" />
+            <img src="images/hawaii_sm.webp" alt="Scenic view of Hawaii" />
+        </picture>
+        </section>
+
+        <section class="weather">
+        <h2>Weather <span class="icon">⛅</span></h2>
+        <p>Temperature: <span id="temp">50°F</span></p>
+        <p>Wind Speed: <span id="wind">5 mph</span></p>
+        <p>Wind Chill: <span id="chill">N/A</span></p>
+        </section>
+
+        <section class="highlights">
+        <h2>Highlights</h2>
+        <ul>
+            <li>Famous landmark</li>
+            <li>Local cuisine</li>
+            <li>Festivals</li>
+        </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="modified"></span></p>
+    </footer>
+</body>
+</html>
