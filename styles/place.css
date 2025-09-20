@@ -78,9 +78,19 @@ nav a {
 }
 
 .weather h2::after {
-    content: '⛅';
-    margin-left: 0.5rem;
+        content: '';
+    }
+
+    .weather .icon {
+        display: inline-flex;
+        vertical-align: middle;
+        margin-left: 0.5rem;
 }
+    .weather .icon svg {
+        display: block;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
 
 /* Highlights Section */
 .highlights {
@@ -117,6 +127,13 @@ footer {
 
     .weather h2::after {
         content: '';
+    }
+
+    .hero-img,
+    .hero img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
     }
 
     .weather h2::before {
