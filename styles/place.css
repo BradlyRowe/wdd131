@@ -53,6 +53,20 @@ nav a {
     border-radius: 0.5rem;
 }
 
+/* Responsive SVG wrapper for hero image */
+.responsive-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.responsive-svg image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
 /* Weather Section */
 .weather {
     margin-top: 2rem;
