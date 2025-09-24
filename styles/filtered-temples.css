@@ -1,0 +1,84 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #004080;
+    --accent-color: #0066cc;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+nav.open ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    figure {
+        padding: 0.25rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+}
