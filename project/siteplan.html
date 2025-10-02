@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy West YSA Site Plan - Bradly D. Rowe</title>
+    <meta name="description" content="Site plan for Roy West Stake Young Single Adults website - WDD 131 Final Project by Bradly D. Rowe">
+    <meta name="author" content="Bradly D. Rowe">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Segoe+UI:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/siteplan.js" defer></script>
+    </head>
+    <body>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals - Final Project Site Plan</span>
+        <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Project Home</a>
+        <a href="siteplan.html">Site Plan</a>
+        <a href="https://github.com/BradlyRowe/wdd131" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+    <h1>Roy West Stake – Young Single Adults (YSA) Site Plan</h1>
+
+    <h2>Site Name</h2>
+    <p><strong>Roy West YSA Hub</strong> – A central gathering place for Young Single Adults in the Roy West Stake. This name reflects both the geographic and spiritual focus of the site, emphasizing unity, purpose, and belonging.</p>
+
+    <h2>Site Purpose</h2>
+    <p>This website will serve as a dynamic hub for Young Single Adults in the Roy West Stake. It will provide:</p>
+    <ul>
+        <li>A welcoming homepage with spiritual and social messaging</li>
+        <li>An “About Us” section outlining the mission and vision of the YSA program</li>
+        <li>A “Gathering Place” page with upcoming events, activities, and service opportunities</li>
+        <li>A “Contact” page for outreach, support, and leadership connections</li>
+        <li>Admin-controlled content updates via JSON configuration</li>
+        <li>Responsive and accessible design hosted on GitHub Pages</li>
+    </ul>
+
+    <h2>Scenarios</h2>
+    <ul>
+        <li>“Where can I find upcoming YSA activities in the Roy West Stake?”</li>
+        <li>“How do I get in touch with YSA leaders or volunteer for an event?”</li>
+        <li>“What is the purpose of the YSA program and how can I get involved?”</li>
+    </ul>
+
+    <h2>Color Schema</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0;">
+        
+        <!-- Primary Colors -->
+        <div style="padding: 1rem; border: 1px solid #ecf0f1; border-radius: 8px;">
+            <h3 style="margin-top: 0;">Primary Palette</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #003366; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#003366</strong> - Dark Navy Blue (Primary brand & navigation)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #0055aa; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#0055aa</strong> - Medium Blue (Hover states & accents)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #f5f5f5; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#f5f5f5</strong> - Light Gray (Background)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Colors -->
+        <div style="padding: 1rem; border: 1px solid #ecf0f1; border-radius: 8px;">
+            <h3 style="margin-top: 0;">Secondary Palette</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #3498db; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#3498db</strong> - Sky Blue (Links & highlights)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #e74c3c; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#e74c3c</strong> - Coral Red (Alerts & CTAs)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #27ae60; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#27ae60</strong> - Forest Green (Success states)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Neutral Colors -->
+        <div style="padding: 1rem; border: 1px solid #ecf0f1; border-radius: 8px;">
+            <h3 style="margin-top: 0;">Neutral Palette</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #ffffff; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#ffffff</strong> - Pure White (Cards & content)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #ecf0f1; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#ecf0f1</strong> - Cloud Gray (Subtle backgrounds)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #95a5a6; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#95a5a6</strong> - Silver Gray (Borders & dividers)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="width: 30px; height: 30px; background-color: #34495e; border: 1px solid #95a5a6; border-radius: 4px;"></div>
+                    <span><strong>#34495e</strong> - Charcoal (Footer & low contrast text)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Usage Guidelines -->
+        <div style="padding: 1rem; border: 1px solid #ecf0f1; border-radius: 8px; grid-column: 1 / -1;">
+            <h3 style="margin-top: 0;">Color Usage Guidelines</h3>
+            <ul style="margin: 0;">
+                <li><strong>Dark Navy Blue (#003366):</strong> Primary brand color for headers, footers, navigation, and main headings</li>
+                <li><strong>Medium Blue (#0055aa):</strong> For hover states, interactive highlights, and navigation accents</li>
+                <li><strong>Sky Blue (#3498db):</strong> For links, secondary highlights, and informational elements</li>
+                <li><strong>Coral Red (#e74c3c):</strong> For important alerts, error states, and call-to-action buttons</li>
+                <li><strong>Forest Green (#27ae60):</strong> For success messages, confirmations, and positive feedback</li>
+                <li><strong>Neutral colors:</strong> For backgrounds, content cards, borders, and supporting elements</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Typography</h2>
+    <ul>
+        <li><strong>Headings:</strong> 'Montserrat', sans-serif – clean and modern</li>
+        <li><strong>Body:</strong> 'Segoe UI', sans-serif – readable and familiar</li>
+        <li><strong>Special Sections:</strong> 'Playfair Display', serif – used for quotes or spiritual emphasis</li>
+    </ul>
+
+    <h2>Wireframes</h2>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+        
+        <!-- Mobile Wireframe -->
+        <div>
+            <h3 style="text-align: center; margin-bottom: 1rem;">Mobile View (320px - 768px)</h3>
+            <div style="border: 2px solid #003366; width: 250px; height: 500px; margin: 0 auto; position: relative; background: #e6f2ff; border-radius: 10px;">
+                
+                <!-- Header -->
+                <div style="background: rgba(255,255,255,0.75); height: 70px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0 10px; color: #003366; font-size: 7px; border-radius: 8px 8px 0 0; border-bottom: 1px solid #95a5a6;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                        <div style="background: #95a5a6; width: 20px; height: 20px; border-radius: 2px;"></div>
+                        <div style="background: #95a5a6; width: 20px; height: 20px; border-radius: 2px;"></div>
+                    </div>
+                    <div style="display: flex; gap: 6px; font-size: 6px;">
+                        <span>Home</span>
+                        <span>About</span>
+                        <span>Contact</span>
+                        <span>Gathering</span>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div style="padding: 15px; font-size: 9px; text-align: center; color: #003366;">
+                    <div style="font-weight: bold; margin-bottom: 8px; font-size: 11px;">
+                        Welcome to Roy West Stake - YSA
+                    </div>
+                    <div style="font-size: 7px; margin-bottom: 10px; line-height: 1.3;">
+                        Building faith, friendship, and community for Young Single Adults
+                    </div>
+                    
+                    <!-- Activity Image -->
+                    <div style="background: #95a5a6; width: 80px; height: 50px; margin: 0 auto 15px; border-radius: 4px;"></div>
+                    
+                    <!-- Cards Stack (Mobile) -->
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div style="background: rgba(255,255,255,0.8); padding: 12px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                            <div style="font-weight: bold; margin-bottom: 4px;">About</div>
+                            <div style="font-size: 6px; margin-bottom: 6px;">Learn about our mission and activities</div>
+                            <div style="background: #0055aa; color: white; padding: 4px 8px; border-radius: 3px; font-size: 6px;">About Us</div>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.8); padding: 12px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                            <div style="font-weight: bold; margin-bottom: 4px;">Contact</div>
+                            <div style="font-size: 6px; margin-bottom: 6px;">Get in touch for questions or support</div>
+                            <div style="background: #0055aa; color: white; padding: 4px 8px; border-radius: 3px; font-size: 6px;">Contact Us</div>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.8); padding: 12px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                            <div style="font-weight: bold; margin-bottom: 4px;">Gathering Place</div>
+                            <div style="font-size: 6px; margin-bottom: 6px;">Events and community gatherings</div>
+                            <div style="background: #0055aa; color: white; padding: 4px 8px; border-radius: 3px; font-size: 6px;">Gathering Place</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.75); height: 60px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #003366; font-size: 7px; border-radius: 0 0 8px 8px; border-top: 1px solid #95a5a6;">
+                    <div style="margin-bottom: 4px;">© 2025 Roy West Stake YSA</div>
+                    <div style="background: #95a5a6; width: 20px; height: 20px; border-radius: 2px;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 1rem; font-size: 0.9rem;">
+                <strong>Mobile Features:</strong>
+                <ul>
+                    <li>Header with two logo images and collapsible navigation menu</li>
+                    <li>Centered welcome message and mission statement</li>
+                    <li>Activity image prominently displayed</li>
+                    <li>Vertically stacked cards for About, Contact, and Gathering Place</li>
+                    <li>Footer with copyright and QR code for easy access</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Desktop Wireframe -->
+        <div>
+            <h3 style="text-align: center; margin-bottom: 1rem;">Desktop View (1024px+)</h3>
+            <div style="border: 2px solid #003366; width: 600px; height: 500px; margin: 0 auto; position: relative; background: #e6f2ff; border-radius: 10px;">
+                
+                <!-- Header -->
+                <div style="background: rgba(255,255,255,0.75); height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; color: #003366; font-size: 9px; border-radius: 8px 8px 0 0; border-bottom: 1px solid #95a5a6;">
+                    <div style="background: #95a5a6; width: 40px; height: 40px; border-radius: 4px;"></div>
+                    <div style="display: flex; gap: 15px;">
+                        <span>Home</span>
+                        <span>About</span>
+                        <span>Contact</span>
+                        <span>Gathering Place</span>
+                    </div>
+                    <div style="background: #95a5a6; width: 40px; height: 40px; border-radius: 4px;"></div>
+                </div>
+                
+                <!-- Main Content -->
+                <div style="padding: 20px; text-align: center; color: #003366;">
+                    <div style="font-weight: bold; margin-bottom: 10px; font-size: 16px;">
+                        Welcome to Roy West Stake - YSA
+                    </div>
+                    <div style="font-size: 10px; margin-bottom: 15px; line-height: 1.4;">
+                        Building faith, friendship, and community for Young Single Adults in Roy West Stake.
+                    </div>
+                    
+                    <!-- Activity Image -->
+                    <div style="background: #95a5a6; width: 120px; height: 80px; margin: 0 auto 20px; border-radius: 6px;"></div>
+                    
+                    <!-- Three Cards Row (Desktop) -->
+                    <div style="display: flex; gap: 15px; justify-content: center; margin-bottom: 20px;">
+                        <div style="background: rgba(255,255,255,0.8); padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); width: 140px;">
+                            <div style="font-weight: bold; margin-bottom: 8px; font-size: 10px;">About</div>
+                            <div style="font-size: 7px; margin-bottom: 10px; line-height: 1.3;">Learn more about our mission, vision, and activities for YSA.</div>
+                            <div style="background: #0055aa; color: white; padding: 6px 12px; border-radius: 4px; font-size: 7px;">About Us</div>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.8); padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); width: 140px;">
+                            <div style="font-weight: bold; margin-bottom: 8px; font-size: 10px;">Contact</div>
+                            <div style="font-size: 7px; margin-bottom: 10px; line-height: 1.3;">Get in touch with us for questions, support, or to get involved.</div>
+                            <div style="background: #0055aa; color: white; padding: 6px 12px; border-radius: 4px; font-size: 7px;">Contact Us</div>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.8); padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); width: 140px;">
+                            <div style="font-weight: bold; margin-bottom: 8px; font-size: 10px;">Gathering Place</div>
+                            <div style="font-size: 7px; margin-bottom: 10px; line-height: 1.3;">Find out about our events, activities, and community gatherings.</div>
+                            <div style="background: #0055aa; color: white; padding: 6px 12px; border-radius: 4px; font-size: 7px;">Gathering Place</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.75); height: 70px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #003366; font-size: 9px; border-radius: 0 0 8px 8px; border-top: 1px solid #95a5a6;">
+                    <div style="margin-bottom: 6px;">© 2025 Roy West Stake YSA</div>
+                    <div style="background: #95a5a6; width: 25px; height: 25px; border-radius: 2px;"></div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 1rem; font-size: 0.9rem;">
+                <strong>Desktop Features:</strong>
+                <ul>
+                    <li>Full header with Christ and Temple logos flanking horizontal navigation</li>
+                    <li>Centered welcome section with prominent title and mission statement</li>
+                    <li>Large activity image showcasing YSA community engagement</li>
+                    <li>Three-column card layout for About, Contact, and Gathering Place sections</li>
+                    <li>Footer with copyright information and QR code for mobile access</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #ecf0f1; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+        <h3 style="margin-top: 0; color: #2c3e50;">Responsive Design Notes</h3>
+        <ul style="margin: 0;">
+            <li><strong>Breakpoints:</strong> Mobile (320px-768px), Tablet (768px-1024px), Desktop (1024px+)</li>
+            <li><strong>Navigation:</strong> Hamburger menu collapses on mobile; full menu bar on desktop</li>
+            <li><strong>Layout:</strong> Single column stacking on mobile; multi-column grid on desktop</li>
+            <li><strong>Images:</strong> Responsive sizing with appropriate aspect ratios for each viewport</li>
+            <li><strong>Typography:</strong> Scalable font sizes and line heights for optimal readability</li>
+            <li><strong>Touch Targets:</strong> Minimum 44px touch targets on mobile devices</li>
+        </ul>
+    </div>
+
+    <h2>Testing</h2>
+    <p>Site will be validated using:</p>
+    <ul>
+        <li>HTML and CSS validators</li>
+        <li>Accessibility tools (e.g., Lighthouse, WAVE)</li>
+        <li>Performance and SEO audits</li>
+        <li>Color contrast checkers</li>
+    </ul>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Bradly D. Rowe - Roy West Stake YSA Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
