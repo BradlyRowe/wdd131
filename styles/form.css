@@ -1,0 +1,93 @@
+/* Reset & Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+header, footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #003366;
+}
+
+label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.rating label {
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+input[type="submit"] {
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #0055aa;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    main {
+        padding: 0.5rem;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}

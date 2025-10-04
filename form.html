@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Product Review</h1>
+    </header>
+
+    <main>
+    <form method="get" action="review.html">
+        <fieldset>
+        <legend>Product Information</legend>
+
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product...</option>
+            <!-- Options will be populated by JS -->
+        </select>
+
+        <label>Overall Rating:</label>
+        <div class="rating">
+            <input type="radio" id="star1" name="rating" value="1" required />
+            <label for="star1">☆</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2">☆☆</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3">☆☆☆</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4">☆☆☆☆</label>
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5">☆☆☆☆☆</label>
+        </div>
+
+        <label for="install-date">Date of Installation:</label>
+        <input type="date" id="install-date" name="install-date" required />
+        </fieldset>
+
+        <fieldset>
+            <legend>Features & Feedback</legend>
+
+            <label>Useful Features:</label>
+            <div class="features">
+            <input type="checkbox" id="feature1" name="features" value="Easy Setup" />
+            <label for="feature1">Easy Setup</label>
+            <input type="checkbox" id="feature2" name="features" value="Durability" />
+            <label for="feature2">Durability</label>
+            <input type="checkbox" id="feature3" name="features" value="Design" />
+            <label for="feature3">Design</label>
+            <input type="checkbox" id="feature4" name="features" value="Performance" />
+            <label for="feature4">Performance</label>
+            </div>
+
+        <label for="review">Written Review:</label>
+        <textarea id="review" name="review" rows="4" placeholder="Share your thoughts..."></textarea>
+
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username" />
+        </fieldset>
+
+        <input type="submit" value="Submit Review" />
+    </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brigham Young University–Idaho | All rights reserved</p>
+    </footer>
+</body>
+</html>
