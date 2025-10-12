@@ -1,0 +1,81 @@
+<header style="background: #003366; color: white; padding: 1rem; margin-bottom: 1rem;">
+  <nav class="navbar navbar-expand-lg" style="background: #003366;">
+    <div class="container">
+      <!-- Left Logo -->
+      <div class="navbar-brand d-flex align-items-center">
+        <img src="images/christ_ysa.png" alt="Logo 1" class="header-logo" loading="lazy">
+      </div>
+      
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: 2px solid white;">
+        <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%28255, 255, 255, 1%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e');"></span>
+      </button>
+      
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto" style="font-family: 'Montserrat', sans-serif;">
+          <li class="nav-item">
+            <a class="nav-link" href="ysa_index.html" style="color: white !important; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s ease; font-weight: 500;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ysa_about.html#About" style="color: white !important; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s ease; font-weight: 500;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ysa_contact.html#Contact" style="color: white !important; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s ease; font-weight: 500;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ysa_gathering.html#Gathering" style="color: white !important; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s ease; font-weight: 500;">Gathering Place</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ysa_gallery.html" style="color: white !important; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s ease; font-weight: 500;">Gallery</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Right Logo -->
+      <div class="d-none d-lg-block">
+        <img src="images/temple_ysa.png" alt="Logo 2" class="header-logo" loading="lazy">
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+// Enhanced navigation functionality
+document.addEventListener('DOMContentLoaded', function() {
+  // Add hover effects to navigation links
+  const navLinks = document.querySelectorAll('header .nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('mouseenter', function() {
+      this.style.backgroundColor = '#0055aa';
+      this.style.transform = 'translateY(-2px)';
+    });
+    link.addEventListener('mouseleave', function() {
+      this.style.backgroundColor = 'transparent';
+      this.style.transform = 'translateY(0)';
+    });
+  });
+
+  // Auto-close mobile menu when clicking a link
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+        navbarToggler.click();
+      }
+    });
+  });
+
+  // Add active page highlighting
+  const currentPage = window.location.pathname.split('/').pop();
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href').split('#')[0];
+    if (href === currentPage || (currentPage === '' && href === 'ysa_index.html')) {
+      link.style.backgroundColor = '#0055aa';
+      link.style.fontWeight = '600';
+    }
+  });
+});
+</script>

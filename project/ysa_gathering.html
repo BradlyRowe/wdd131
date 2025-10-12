@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gathering Place - Roy West Stake YSA</title>
+  <meta name="description" content="Find upcoming events, activities, and opportunities to connect with other Young Single Adults in Roy West Stake.">
+  <meta name="author" content="Bradly D. Rowe">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Segoe+UI:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/ysa_styles.css">
+</head>
+<body>
+  <div id="common-header"></div>
+  <div class="container main-content">
+    <div class="text-center mb-4">
+      <h1 class="display-5 fw-bold">Gathering Place</h1>
+      <p class="lead">Discover upcoming events, activities, and opportunities to connect with other Young Single Adults in Roy West Stake.</p>
+    </div>
+
+    <!-- Gathering Place Images Grid -->
+    <div class="row g-3 mb-4 gathering-image-grid">
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="images/gathering/gp1.jpg" alt="Monthly Gathering Events" class="img-fluid hero-image" loading="lazy" data-bs-toggle="modal" data-bs-target="#gatheringImageModal" data-bs-image="images/gathering/gp1.jpg" data-bs-title="Monthly Gathering Events">
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="images/gathering/gp2.jpg" alt="Gathering Place Activities" class="img-fluid hero-image" loading="lazy" data-bs-toggle="modal" data-bs-target="#gatheringImageModal" data-bs-image="images/gathering/gp2.jpg" data-bs-title="Gathering Place Activities">
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="images/gathering/gp3.jpg" alt="Spiritual Gatherings" class="img-fluid hero-image" loading="lazy" data-bs-toggle="modal" data-bs-target="#gatheringImageModal" data-bs-image="images/gathering/gp3.jpg" data-bs-title="Spiritual Gatherings">
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="images/gathering/gp4.jpg" alt="YSA Community Events" class="img-fluid hero-image" loading="lazy" data-bs-toggle="modal" data-bs-target="#gatheringImageModal" data-bs-image="images/gathering/gp4.jpg" data-bs-title="YSA Community Events">
+        </div>
+      </div>
+    </div>
+      <div class="row justify-content-center g-4">
+        <div class="col-12 col-md-8">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <div class="mb-3">
+                <a href="https://www.facebook.com/profile.php?id=61561512722612" target="_blank" class="btn btn-outline-primary me-2">
+                  <img src="images/facebook.png" alt="Facebook" class="social-icon" loading="lazy"> Facebook
+                </a>
+                <a href="https://www.instagram.com/thegatheringplace.westweber/?img_index=2" target="_blank" class="btn btn-outline-danger">
+                  <img src="images/instagram.png" alt="Instagram" class="social-icon" loading="lazy"> Instagram
+                </a>
+              </div>
+              <div>
+                <img src="images/QR-GatheringPlaceWeber.png" alt="QR Code" class="qr-code" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Gathering Place Image Modal -->
+  <div class="modal fade" id="gatheringImageModal" tabindex="-1" aria-labelledby="gatheringImageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="gatheringImageModalLabel">Gathering Place Image</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="gatheringModalImage" src="" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="common-footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/ysa_base.js"></script>
+</body>
+</html>
